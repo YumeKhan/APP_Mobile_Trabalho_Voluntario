@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lilac_light"
+    tools:context=".auth.RegisterActivity"
+    android:fontFamily="@font/beautiful_font">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <include
+            android:id="@+id/inLoading"
+            layout="@layout/card_loading"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/layoutInput"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                app:srcCompat="@mipmap/ic_logo"
+                android:contentDescription="@string/logo_desc" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@mipmap/ic_user"
+                android:background="@drawable/input_border_lilac"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:hint="@string/placeholder_name"
+                android:inputType="text"
+                android:fontFamily="@font/beautiful_font" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@mipmap/ic_mail"
+                android:background="@drawable/input_border_lilac"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:hint="@string/placeholder_email"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/beautiful_font" />
+
+            <EditText
+                android:id="@+id/etPassword1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/input_border_lilac"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:drawableStart="@mipmap/ic_password"
+                android:ems="10"
+                android:hint="@string/placeholder_pass1"
+                android:inputType="textPassword"
+                android:fontFamily="@font/beautiful_font" />
+
+            <EditText
+                android:id="@+id/etPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/placeholder_pass2"
+                android:background="@drawable/input_border_lilac"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:drawableStart="@mipmap/ic_password"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:fontFamily="@font/beautiful_font" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="register"
+                android:text="@string/register"
+                android:backgroundTint="@color/purple_200"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/beautiful_font" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="login"
+                android:text="@string/btn_login"
+                android:backgroundTint="@color/purple_200"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/beautiful_font" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Trabalho Voluntario</string>
+    <string name="inp_email">Email</string>
+    <string name="inp_password">Senha</string>
+    <string name="inp_name">Nome</string>
+    <string name="btn_regiter">Cadastrar</string>
+    <string name="btn_login">Login</string>
+    <string name="txtLoading">Comunicando com o Servidor</string>
+    <string name="placeholder_name">Digite aqui o seu nome</string>
+    <string name="placeholder_email">Digite aqui o seu email</string>
+    <string name="placeholder_pass1">Digite aqui a sua senha</string>
+    <string name="placeholder_pass2">Digite aqui novamente a sua senha</string>
+    <string name="nav_home">Trabalhos</string>
+    <string name="nav_profile">Perfil</string>
+    <string name="nav_post">Meus Trabalhos</string>
+    <string name="nav_canditate">Candidaturas</string>
+    <string name="register_save">Cadastro salvo com sucesso</string>
+    <string name="register">register</string>
+    <string name="logo_desc">logo_desc</string>
+    <string name="regiter">regiter</string>
+    <string name="app_logo">app_logo</string>
+
+</resources>

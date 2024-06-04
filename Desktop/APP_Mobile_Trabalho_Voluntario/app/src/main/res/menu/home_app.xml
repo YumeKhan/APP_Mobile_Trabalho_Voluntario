@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/nav_post"
+            android:icon="@mipmap/ic_post"
+            android:title="@string/nav_post" />
+
+        <item
+            android:id="@+id/nav_canditate"
+            android:icon="@mipmap/ic_office"
+            android:title="@string/nav_canditate" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@mipmap/ic_profile"
+            android:title="@string/nav_profile" />
+    </group>
+
+</menu>
